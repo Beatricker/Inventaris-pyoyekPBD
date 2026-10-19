@@ -16,7 +16,7 @@ $barang = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body class="container mt-4">
-    <h2>Daftar Master Barang</h2>
+    <h2>Daftar Barang</h2>
     <a href="tambah.php" class="btn btn-primary mb-3">Tambah Barang Baru</a>
 
     <table class="table table-bordered table-striped">

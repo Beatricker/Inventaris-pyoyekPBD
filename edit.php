@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $status = $_POST['status'];
     $harga = $_POST['harga'];
 
-    // Raw SQL UPDATE murni
     $sql = "UPDATE barang SET jenis = ?, nama = ?, idsatuan = ?, status = ?, harga = ? WHERE idbarang = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$jenis, $nama, $idsatuan, $status, $harga, $id]);
